@@ -8,7 +8,7 @@ import {
   randomUUID
 } from 'crypto'
 
-const Database = new Map()
+import Database from './database'
 
 function respondJSON(data, response) {
   return response.end(JSON.stringify(data))
